@@ -33,9 +33,11 @@ const Hero = () => {
             textAlign="left"
             onLetterAnimationComplete={handleAnimationComplete}
           />
-          <h2 className="md:w-1/3 w-full text-2xl font-medium text-white self-center mt-15">
-            ICT Student<br></br>Web Designer<br></br>Frontend Developer
-          </h2>
+          <div className="flex flex-col md:w-1/3 w-full text-2xl font-medium text-white self-center mt-15">
+            <h2>Student</h2>
+            <h2>Designer</h2>
+            <h2>Developer</h2>
+          </div>
         </div>
         {/* right side */}
         <div className="md:w-3/5 w-full mr-8">

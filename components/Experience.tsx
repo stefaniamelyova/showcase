@@ -1,5 +1,3 @@
-import BackgroundBubbles from "./BackgroundBubbles";
-
 type ExperienceProps = {
   title: string;
   text1: string;
@@ -14,6 +12,7 @@ type ExperienceProps = {
   bullet7: string;
   bullet8: string;
   bullet9: string;
+  
 };
 
 export default function Page({
@@ -33,13 +32,9 @@ export default function Page({
 }: ExperienceProps) {
   return (
     <section>
-      <div className="pointer-events-none absolute inset-0 -z-10">
-        <div className="absolute top-[-20%] left-[-10%] w-[60vw] h-[60vw] bg-[#D30082] rounded-full blur-[200px]" />
-        <div className="absolute bottom-[-10%] right-[-10%] w-[50vw] h-[50vw] bg-[#FF4FCF] rounded-full blur-[220px]" />
-        <div className="absolute top-[30%] right-[30%] w-[40vw] h-[40vw] bg-[#700050] rounded-full blur-[180px]" />
-      </div>
+      <div className="absolute top-470 -left-40 bg-[#D30082] text-white p-2 rounded-br-lg h-80 w-80 opacity-90 blur-[150px]"></div>
       <div
-        className="flex flex-col md:flex-row  m-20 text-white bg-[rgba(255,255,255,0.06)] backdrop-blur-md border border-white/20
+        className=" relative  flex flex-col md:flex-row  ml-24 mr-24 mt-15 text-white bg-[rgba(255,255,255,0.06)] backdrop-blur-2xl border border-white/20
         shadow-md rounded-xl  "
       >
         <div className="border p-10 border-white/20">
@@ -68,6 +63,7 @@ export default function Page({
           </ul>
         </div>
       </div>
+
     </section>
   );
 }
