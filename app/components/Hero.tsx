@@ -1,0 +1,49 @@
+"use client";
+import React, { useRef, useEffect, useState } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { SplitText as GSAPSplitText } from "gsap/SplitText";
+import { useGSAP } from "@gsap/react";
+import SplitText from "./SplitText";
+import BalloonDog3D from "./BalloonDog3D";
+
+const Hero = () => {
+  const handleAnimationComplete = () => {
+    console.log("Animation finished!");
+  };
+
+  return (
+    <section
+      id="hero-section"
+      className="min-h-screen flex items-start justify-start bg-black p-8 pt-40 "
+    >
+      {/* left side */}
+      <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row  gap-5">
+        <div className="md:w-1/2 w-full">
+          <SplitText
+            text="Stefania Alberto"
+            className="text-8xl font-extrabold  text-white mr-200"
+            delay={100}
+            duration={0.6}
+            ease="power3.out"
+            splitType="chars"
+            from={{ opacity: 0, y: 40 }}
+            to={{ opacity: 1, y: 0 }}
+            threshold={0.1}
+            textAlign="left"
+            onLetterAnimationComplete={handleAnimationComplete}
+          />
+          <h2 className="md:w-1/3 w-full text-2xl font-medium text-white self-center mt-15">
+            ICT Student<br></br>Web Designer<br></br>Frontend Developer
+          </h2>
+        </div>
+        {/* right side */}
+        <div className="md:w-2/3 w-full">
+          <BalloonDog3D />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;

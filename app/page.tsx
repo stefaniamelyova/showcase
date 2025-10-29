@@ -1,10 +1,12 @@
+import Hero from "./components/Hero";
+
 export default function Page() {
   return (
     <main
-      className="min-h-screen flex items-center justify-center bg-purple1
+      className="min-h-screen flex items-center justify-center bg-black
     "
     >
-      <h1 className="text-4xl font-bold"> Page</h1>
+      <Hero/>
     </main>
   );
 }
