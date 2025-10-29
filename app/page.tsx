@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import LogoLoop from "../components/LogoLoop";
 import Cards from "@/components/Cards";
 import MagicBento from "@/components/Cards";
+import { link } from "fs";
 const imageLogos = [
   { src: "/company1.png", alt: "Company 1", href: "https://company1.com" },
   { src: "/company2.png", alt: "Company 2", href: "https://company2.com" },
@@ -17,11 +18,12 @@ const imageLogos = [
 export default function Page() {
   const cards = [
     {
-      title: "Analytics",
-      description: "Track user behavior",
-      label: "Insights",
+      title: "",
+      description: "",
+      label: "Brand Identity",
       color: "#0A0015",
-      image: "/logo.png",
+      image: "projects/nb1.png",
+      link: "/nb",
     },
     {
       title: "Dashboard",
@@ -73,40 +75,46 @@ export default function Page() {
       />
       <About />
 
-      <h2 id="experience" className="text-white text-6xl font-extrabold mt-15 -ml-240 ">
+      <h2
+        id="experience"
+        className="text-white text-6xl font-extrabold mt-15 -ml-240 "
+      >
         Experience
       </h2>
       <Experience
         title="Education"
         text1="High School Diploma, 35th “Dobri Voinikov” Language School — Sofia, Bulgaria (2018–2023)"
-        text2="Master of Science in Software Engineering, ABC Institute"
-        text3="Relevant coursework includes Data Structures, Algorithms, Web Development, and Database Systems."
-        bullet1="Graduated with Honors"
-        bullet2="Dean's List for 6 semesters"
-        bullet3="Completed a capstone project on web application security"
-        bullet4="Participated in coding competitions and hackathons"
-        bullet5="Member of the Computer Science Club"
-        bullet6="Interned at Tech Company during summer 2022"
-        bullet7="Volunteered as a tutor for introductory programming courses"
-        bullet8="Attended workshops on emerging technologies"
-        bullet9="Collaborated on open-source projects"
+        text2="Bachelor of Design in Graphic Design — École de Condé, Nice, France (2023–2024)"
+        text3="Bachelor of Science in ICT — Fontys University of Applied Sciences, Eindhoven, Netherlands (2024–Present)"
+        bullet1="Obtained DALF C1 certification in French and studied Russian"
+        bullet2="Served on the Student Council"
+        bullet3="Developed strong linguistic, analytical, and interpersonal skills"
+        bullet4="Coursework focused on design thinking, visual communication, and creative strategy"
+        bullet5="Strengthened artistic direction and conceptual development skills"
+        bullet6="Designed projects integrating French cultural and visual identity"
+        bullet7="Specialization in Frontend Development"
+        bullet8="Developing projects in Next.js, Tailwind CSS, and Three.js"
+        bullet9="Designing in Figma, Adobe Creative Suite, and Blender"
       />
       <Experience
-        title="Education"
-        text1="Bachelor of Science in Computer Science, XYZ University"
-        text2="Master of Science in Software Engineering, ABC Institute"
-        text3="Relevant coursework includes Data Structures, Algorithms, Web Development, and Database Systems."
-        bullet1="Graduated with Honors"
-        bullet2="Dean's List for 6 semesters"
-        bullet3="Completed a capstone project on web application security"
-        bullet4="Participated in coding competitions and hackathons"
-        bullet5="Member of the Computer Science Club"
-        bullet6="Interned at Tech Company during summer 2022"
-        bullet7="Volunteered as a tutor for introductory programming courses"
-        bullet8="Attended workshops on emerging technologies"
-        bullet9="Collaborated on open-source projects"
+        title="Work Experience"
+        text1="Content Creation Intern — Signify (formerly Philips Lighting), Eindhoven, Netherlands (2024 - 2025)"
+        text2="Freelance Designer (2023–Present)"
+        text3="Academic & Client Projects — Fontys University of Applied Sciences (2024–Present)"
+        bullet1="Collaborated directly with the Lead UX Designer on interactive app prototypes for internal applications"
+        bullet2="Created engaging visual assets, including graphics, motion videos, and promotional materials"
+        bullet3="Gained insight into corporate-level UX and product design workflows"
+        bullet4="Designed cohesive brand identities for companies including NB Limited and Reconnect Bulgaria"
+        bullet5="Delivered visual systems, logo design, typography, and social media guidelines"
+        bullet6="Managed the entire design process independently — from concept to delivery"
+        bullet7="Worked on real-world projects for clients such as Belco Alliance (non-profit university network) and OWOW (software company)"
+        bullet8="Designed and developed fully functional web platforms using Next.js, Tailwind CSS."
+        bullet9="Applied advanced technical and creative problem-solving to deliver scalable, user-centered outcomes"
       />
-      <h2 id="projects" className="text-white text-6xl font-extrabold mt-25 -ml-260 mb-10">
+      <h2
+        id="projects"
+        className="text-white text-6xl font-extrabold mt-25 -ml-260 mb-10"
+      >
         Projects
       </h2>
       <MagicBento

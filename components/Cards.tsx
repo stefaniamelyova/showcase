@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import React, { useRef, useEffect, useState, useCallback } from "react";
 import { gsap } from "gsap";
@@ -757,7 +758,7 @@ const MagicBento: React.FC<MagicBentoProps> = ({
                   clickEffect={clickEffect}
                   enableMagnetism={enableMagnetism}
                 >
-                  <a href={card.link || "#"} className="block h-full w-full">
+                  <Link href={card.link || "#"} className="block h-full w-full">
                     <div className="card__header flex justify-between gap-3 relative text-white">
                       <span className="card__label text-base">
                         {card.label}
@@ -768,7 +769,7 @@ const MagicBento: React.FC<MagicBentoProps> = ({
                         <img
                           src={card.image}
                           alt={card.title}
-                          className="w-full h-40 object-cover rounded-md mb-3 opacity-80"
+                          className="w-full h-full object-cover rounded-md mb-3 opacity-80"
                         />
                       )}
                       <h3
@@ -786,7 +787,7 @@ const MagicBento: React.FC<MagicBentoProps> = ({
                         {card.description}
                       </p>
                     </div>
-                  </a>
+                  </Link>
                 </ParticleCard>
               );
             }

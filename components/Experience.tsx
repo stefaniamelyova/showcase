@@ -39,7 +39,7 @@ export default function Page({
       >
         <div className="border p-10 border-white/20">
           <h2 className="text-4xl font-extrabold">{title}</h2>
-          <p className="mt-4">{text1}</p>
+          <p className="mt-4 font-bold mb-4 ">{text1}</p>
           <ul className="list-disc list-inside">
             <li>{bullet1}</li>
             <li>{bullet2}</li>
@@ -47,7 +47,7 @@ export default function Page({
           </ul>
         </div>
         <div className="border p-10 border-white/20">
-          <p className="mt-4">{text2}</p>
+          <p className="mt-4 font-bold mb-4">{text2}</p>
           <ul className="list-disc list-inside">
             <li>{bullet4}</li>
             <li>{bullet5}</li>
@@ -55,7 +55,7 @@ export default function Page({
           </ul>
         </div>
         <div className="border p-10 border-white/20">
-          <p className="mt-4">{text3}</p>
+          <p className="mt-4 font-bold mb-4">{text3}</p>
           <ul className="list-disc list-inside">
             <li>{bullet7}</li>
             <li>{bullet8}</li>

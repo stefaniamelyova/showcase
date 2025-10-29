@@ -41,7 +41,7 @@ export default function About() {
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`border-2 border-gray text-gray font-medium px-6 py-1 rounded transition duration-300 ${
+                className={` border-1 text-gray font-medium px-6 py-1 rounded transition duration-300 ${
                   activeTab === tab ? "bg-gray text-white" : "hover:bg-gray/10"
                 }`}
               >
