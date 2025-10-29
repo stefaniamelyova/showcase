@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="min-h-screen flex items-start justify-start bg-black pl-8 pr-8 pt-40 "
+      className="min-h-screen flex items-start justify-start bg-black pl-8 pr-7 pt-40 "
     >
       {/* left side */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row  gap-5">

@@ -11,6 +11,10 @@
   --color-white: #ffffff;
   --color-black: #000000;}
 
+  html {
+  scroll-behavior: smooth;
+}
+
   /* map background/foreground used by your CSS */
 
   /* --radius: 0.625rem;

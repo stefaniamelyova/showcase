@@ -30,18 +30,13 @@ const NavBar = () => {
             </Link>
           </li>
           <li>
-            <Link href="/experience" className="hover:underline">
+            <Link href="/#experience" className="hover:underline">
               Experience
             </Link>
           </li>
           <li>
             <Link href="/#about" className="hover:underline">
               About me
-            </Link>
-          </li>
-          <li>
-            <Link href="/#contact" className="hover:underline">
-              Contact me
             </Link>
           </li>
         </ul>
@@ -71,9 +66,6 @@ const NavBar = () => {
           </Link>
           <Link href="/#about" onClick={closeMenu}>
             About me
-          </Link>
-          <Link href="/#contact" onClick={closeMenu}>
-            Contact me
           </Link>
         </div>
       )}

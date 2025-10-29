@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-const tabs = ["skills", "experience", "education"];
+const tabs = ["Design Skills", "Programming Skills", "Soft Skills"];
 
 export default function About() {
   const [activeTab, setActiveTab] = useState("skills");
@@ -51,69 +51,59 @@ export default function About() {
           </div>
 
           {/* Tab Contents */}
-          {activeTab === "skills" && (
+
+          {activeTab === "Design Skills" && (
             <ul>
               <li className="mb-2">
-                <span className="text-xl font-semibold">UI/UX</span>
+                <span className="text-xl font-semibold">Web Design</span>
                 <br />
-                Designing Web/App Interfaces
+                Advanced
               </li>
               <li className="mb-2">
-                <span className="text-xl font-semibold">
-                  Front-end Development
-                </span>
+                <span className="text-xl font-semibold">Graphic Design</span>
                 <br />
-                Developing websites
+                Advanced
               </li>
               <li className="mb-2">
-                <span className="text-xl font-semibold">User Research</span>
+                <span className="text-xl font-semibold">3D Design</span>
                 <br />
-                Research on target audience and user behaviour
+                Beginner
               </li>
             </ul>
           )}
-          {activeTab === "experience" && (
+          {activeTab === "Programming Skills" && (
             <ul>
               <li className="mb-2">
-                <span className="text-xl font-semibold">Web Designer</span>
+                <span className="text-xl font-semibold">NextJs</span>
                 <br />
-                WaveMe App
-                <br />
-                September 2023 - June 2024
+                Beginner
               </li>
               <li className="mb-2">
-                <span className="text-xl font-semibold">
-                  Content Creation Intern
-                </span>
+                <span className="text-xl font-semibold">Tailwind CSS</span>
                 <br />
-                Signify
+                Beginner
+              </li>
+              <li className="mb-2">
+                <span className="text-xl font-semibold">Three.js</span>
                 <br />
-                May 2024 - present
+                Beginner
               </li>
             </ul>
           )}
-          {activeTab === "education" && (
+          {activeTab === "Soft Skills" && (
             <ul>
               <li className="mb-2">
-                <span className="text-xl font-semibold">35 Highschool</span>
-                <br />
-                French, Russian, Bulgarian, Philosophy
-                <br />
-                2018 - 2023
+                <span className="text-xl font-semibold">Team Work</span>
               </li>
               <li className="mb-2">
-                <span className="text-xl font-semibold">Ecole de Condé</span>
-                <br />
-                Graphic Design
-                <br />
-                2023 - 2024
+                <span className="text-xl font-semibold">
+                  Creative problem solving
+                </span>
               </li>
               <li className="mb-2">
-                <span className="text-xl font-semibold">Fontys University</span>
-                <br />
-                Media Design
-                <br />
-                2024 - 2028 (hopefully :)
+                <span className="text-xl font-semibold">
+                  Visual Storytelling
+                </span>
               </li>
             </ul>
           )}
