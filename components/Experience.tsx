@@ -12,7 +12,6 @@ type ExperienceProps = {
   bullet7: string;
   bullet8: string;
   bullet9: string;
-  
 };
 
 export default function Page({
@@ -32,7 +31,8 @@ export default function Page({
 }: ExperienceProps) {
   return (
     <section>
-      <div className="absolute top-470 -left-40 bg-[#D30082] text-white p-2 rounded-br-lg h-80 w-80 opacity-90 blur-[150px]"></div>
+      <div className="absolute top-540 -left-40 bg-[#D30082] text-white p-2 rounded-br-lg h-80 w-80 opacity-90 blur-[150px]"></div>
+      <div className="absolute top-440 -right-40 bg-[#D30082] text-white p-2 rounded-br-lg h-80 w-80 opacity-90 blur-[150px]"></div>
       <div
         className=" relative  flex flex-col md:flex-row  ml-24 mr-24 mt-15 text-white bg-[rgba(255,255,255,0.06)] backdrop-blur-2xl border border-white/20
         shadow-md rounded-xl  "
@@ -63,7 +63,6 @@ export default function Page({
           </ul>
         </div>
       </div>
-
     </section>
   );
 }

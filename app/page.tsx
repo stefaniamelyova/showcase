@@ -61,7 +61,6 @@ export default function Page() {
           bullet8="Attended workshops on emerging technologies"
           bullet9="Collaborated on open-source projects"
         />
-      <Footer/>
     </main>
   );
 }
