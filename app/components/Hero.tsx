@@ -15,11 +15,11 @@ const Hero = () => {
   return (
     <section
       id="hero-section"
-      className="min-h-screen flex items-start justify-start bg-black p-8 pt-40 "
+      className="min-h-screen flex items-start justify-start bg-black pl-8 pr-8 pt-40 "
     >
       {/* left side */}
       <div className="w-full max-w-7xl mx-auto flex flex-col md:flex-row  gap-5">
-        <div className="md:w-1/2 w-full">
+        <div className="md:w-2/5 w-full">
           <SplitText
             text="Stefania Alberto"
             className="text-8xl font-extrabold  text-white mr-200"
@@ -38,7 +38,7 @@ const Hero = () => {
           </h2>
         </div>
         {/* right side */}
-        <div className="md:w-2/3 w-full">
+        <div className="md:w-3/5 w-full mr-8">
           <BalloonDog3D />
         </div>
       </div>
