@@ -13,6 +13,7 @@ const imageLogos = [
   { src: "/company2.png", alt: "Company 2", href: "https://company2.com" },
   { src: "/company3.png", alt: "Company 3", href: "https://company3.com" },
   { src: "/company4.png", alt: "Company 4", href: "https://company4.com" },
+  { src: "/company5.png", alt: "Company 5", href: "https://company5.com" },
 ];
 
 export default function Page() {
@@ -26,34 +27,44 @@ export default function Page() {
       link: "/nb",
     },
     {
-      title: "Dashboard",
-      description: "Centralized data view",
-      label: "Overview",
+      title: "",
+      description: "",
+      label: "Brand Identity",
       color: "#120020",
+      image: "projects/region2.png",
+      link: "/region",
     },
     {
-      title: "Dashboard",
-      description: "Centralized data view",
-      label: "Overview",
+      title: "",
+      description: "",
+      label: "Mobile App Design",
       color: "#120020",
+      image: "projects/app1.png",
+      link: "/app",
     },
     {
-      title: "Dashboard",
-      description: "Centralized data view",
-      label: "Overview",
+      title: "",
+      description: "",
+      label: "Website Redesign",
       color: "#120020",
+      image: "projects/belco1.png",
+      link: "/belco",
     },
     {
-      title: "Dashboard",
-      description: "Centralized data view",
-      label: "Overview",
+      title: "",
+      description: "",
+      label: "Mobile App Design",
       color: "#120020",
+      image: "projects/waveme1.png",
+      link: "/waveme",
     },
     {
-      title: "Dashboard",
-      description: "Centralized data view",
-      label: "Overview",
+      title: "",
+      description: "",
+      label: "Website Redesign",
       color: "#120020",
+      image: "projects/yale1.png",
+      link: "/yale",
     },
   ];
   return (
@@ -104,7 +115,7 @@ export default function Page() {
         bullet1="Collaborated directly with the Lead UX Designer on interactive app prototypes for internal applications"
         bullet2="Created engaging visual assets, including graphics, motion videos, and promotional materials"
         bullet3="Gained insight into corporate-level UX and product design workflows"
-        bullet4="Designed cohesive brand identities for companies including NB Limited and Reconnect Bulgaria"
+        bullet4="Designed cohesive brand identities for companies including NB Limited, Reconnect Bulgaria and Region Fruit"
         bullet5="Delivered visual systems, logo design, typography, and social media guidelines"
         bullet6="Managed the entire design process independently — from concept to delivery"
         bullet7="Worked on real-world projects for clients such as Belco Alliance (non-profit university network) and OWOW (software company)"
