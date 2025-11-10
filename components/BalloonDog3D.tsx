@@ -13,7 +13,6 @@ function DogModel() {
   const { scene } = useGLTF("/models/ballon-dogf.glb");
   const ref = useRef<THREE.Group>(null);
 
-  // Assign shiny pink material
   useEffect(() => {
     scene.traverse((object) => {
       if ((object as THREE.Mesh).isMesh) {
@@ -30,7 +29,6 @@ function DogModel() {
     });
   }, [scene]);
 
-  // Scroll-triggered spin animation only
   useEffect(() => {
     const dog = ref.current;
     if (!dog) return;
@@ -46,14 +44,12 @@ function DogModel() {
       },
     });
 
-    // ✅ Only kill this one tween + its own trigger
     return () => {
-      tween.scrollTrigger?.kill(); // only removes THIS trigger
+      tween.scrollTrigger?.kill(); 
       tween.kill();
     };
   }, []);
 
-  // Gentle idle rotation (always running)
   useFrame(() => {
     if (ref.current) {
       ref.current.rotation.y += 0.003;
